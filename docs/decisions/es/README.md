@@ -5,6 +5,8 @@
 
 # Registro de decisiones de arquitectura
 
+*Última actualización: 2026-09-27*
+
 Registro de las decisiones de arquitectura del proyecto (ADR). Cada decisión tiene su propio documento con el
 contexto que la motivó, las opciones evaluadas, la decisión tomada y sus consecuencias.
 

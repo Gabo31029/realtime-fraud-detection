@@ -7,7 +7,7 @@
 
 | Status | Date |
 |---|---|
-| Proposed | 2026-10-05 |
+| Proposed | 2026-09-26 |
 
 ## Context
 

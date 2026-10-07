@@ -7,7 +7,7 @@
 
 | Status | Date |
 |---|---|
-| Accepted | 2026-10-06 |
+| Accepted | 2026-09-27 |
 
 ## Context
 

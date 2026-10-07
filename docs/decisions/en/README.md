@@ -5,6 +5,8 @@
 
 # Architecture Decision Records
 
+*Last updated: 2026-09-27*
+
 Record of the project's architecture decisions (ADRs). Each decision has its own document describing the context that
 motivated it, the options considered, the decision taken and its consequences.
 

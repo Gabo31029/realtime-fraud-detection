@@ -1,5 +1,7 @@
 # Architecture Decision Records
 
+*Última actualización / Last updated: 2026-09-27*
+
 Registro de decisiones de arquitectura del proyecto, disponible en dos idiomas.
 
 Record of the project's architecture decisions, available in two languages.

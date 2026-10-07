@@ -7,7 +7,7 @@
 
 | Estado | Fecha |
 |---|---|
-| Aceptada | 2026-10-06 |
+| Aceptada | 2026-09-27 |
 
 ## Contexto
 
