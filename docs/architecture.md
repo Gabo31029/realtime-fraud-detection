@@ -116,7 +116,7 @@ un único nodo; en AWS, Amazon MSK con tres brokers en tres zonas de disponibili
 - La retención del topic de entrada supera la ventana más larga (7 días) para poder reconstruir el estado de Redis.
   La retención se mide con el timestamp del mensaje, que es el momento de publicación, mientras que las ventanas se
   miden en tiempo de evento. Por eso el replayer no asigna `event_time` como timestamp del mensaje: con fechas de
-  2019–2020, Kafka borraría los eventos nada más recibirlos.
+  2019 y 2020, Kafka borraría los eventos nada más recibirlos.
 - Los esquemas se validan con compatibilidad hacia atrás: los campos nuevos son opcionales y tienen valor por defecto.
 
 Contrato del evento de entrada (`schemas/transaction.avsc`):
