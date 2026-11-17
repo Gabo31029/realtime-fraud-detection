@@ -1,0 +1,6 @@
+# Finales de línea LF en el repositorio, sin importar el sistema operativo
+* text=auto eol=lf
+
+# Scripts de Windows con CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf

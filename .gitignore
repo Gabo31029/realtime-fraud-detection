@@ -1,0 +1,38 @@
+# Datos: CSV de Sparkov en data/raw/ (no se versionan)
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Entorno
+.env
+
+# Terraform (el estado puede contener secretos)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Artefactos de modelo y logs
+models/
+mlruns/
+*.log
+
+# Notas personales
+Homework.md
+
+# IDE / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

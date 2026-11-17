@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "Transaction",
+  "namespace": "shield.v1",
+  "doc": "Transacción de pago publicada en transactions.raw. No incluye la etiqueta de fraude ni datos personales.",
+  "fields": [
+    {"name": "trans_num",   "type": "string", "doc": "Identificador único de la transacción"},
+    {"name": "event_time",  "type": {"type": "long", "logicalType": "timestamp-millis"}, "doc": "Momento de la transacción (tiempo de evento, UTC)"},
+    {"name": "cc_num",      "type": "string", "doc": "Número de tarjeta. Es la clave de partición"},
+    {"name": "merchant",    "type": "string"},
+    {"name": "category",    "type": "string"},
+    {"name": "amt",         "type": {"type": "bytes", "logicalType": "decimal", "precision": 12, "scale": 2}},
+    {"name": "lat",         "type": "double", "doc": "Latitud del cliente"},
+    {"name": "long",        "type": "double", "doc": "Longitud del cliente"},
+    {"name": "merch_lat",   "type": "double"},
+    {"name": "merch_long",  "type": "double"},
+    {"name": "city_pop",    "type": "int"},
+    {"name": "dob",         "type": {"type": "int", "logicalType": "date"}, "doc": "Fecha de nacimiento del cliente"},
+    {"name": "produced_at", "type": {"type": "long", "logicalType": "timestamp-millis"}, "doc": "Momento en que el replayer publicó el evento (reloj de pared)"}
+  ]
+}
