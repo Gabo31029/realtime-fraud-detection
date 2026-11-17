@@ -5,7 +5,7 @@
 
 # Registro de decisiones de arquitectura
 
-*Última actualización: 2026-09-27*
+*Última actualización: 2026-11-17*
 
 Registro de las decisiones de arquitectura del proyecto (ADR). Cada decisión tiene su propio documento con el
 contexto que la motivó, las opciones evaluadas, la decisión tomada y sus consecuencias.
@@ -29,6 +29,7 @@ contexto que la motivó, las opciones evaluadas, la decisión tomada y sus conse
 | [ADR-0013](0013-observabilidad.md) | Métricas en formato Prometheus y CloudWatch en AWS | Los servicios exponen métricas en formato Prometheus; en local se ven con Prometheus y Grafana, y en AWS con CloudWatch. | Propuesta |
 | [ADR-0014](0014-despliegue-local-y-aws.md) | Docker Compose en local y servicios gestionados en AWS | El sistema completo se levanta en local con Docker Compose y se despliega en AWS sobre servicios gestionados definidos con Terraform. | Aceptada |
 | [ADR-0015](0015-ejecucion-replayer.md) | Ejecución del replayer como tarea de ECS Fargate | El replayer se ejecuta en AWS como tarea de ECS Fargate bajo demanda, y no en Lambda ni en EC2. | Aceptada |
+| [ADR-0016](0016-particiones-topics.md) | Número de particiones de los topics | `transactions.raw` y `transactions.scored` usan 6 particiones y la cola de errores 1, según la carga de diseño y la capacidad estimada del consumidor. | Aceptada |
 
 ## Estados
 

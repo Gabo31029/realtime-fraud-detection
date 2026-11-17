@@ -5,7 +5,7 @@
 
 # Architecture Decision Records
 
-*Last updated: 2026-09-27*
+*Last updated: 2026-11-17*
 
 Record of the project's architecture decisions (ADRs). Each decision has its own document describing the context that
 motivated it, the options considered, the decision taken and its consequences.
@@ -29,6 +29,7 @@ motivated it, the options considered, the decision taken and its consequences.
 | [ADR-0013](0013-observabilidad.md) | Prometheus-format metrics and CloudWatch on AWS | Services expose Prometheus-format metrics; locally they are viewed with Prometheus and Grafana, and on AWS with CloudWatch. | Proposed |
 | [ADR-0014](0014-despliegue-local-y-aws.md) | Docker Compose locally and managed services on AWS | The full system runs locally with Docker Compose and is deployed on AWS managed services defined with Terraform. | Accepted |
 | [ADR-0015](0015-ejecucion-replayer.md) | Running the replayer as an ECS Fargate task | On AWS the replayer runs as an on-demand ECS Fargate task, not on Lambda or EC2. | Accepted |
+| [ADR-0016](0016-particiones-topics.md) | Number of topic partitions | `transactions.raw` and `transactions.scored` use 6 partitions and the dead-letter queue 1, based on the design load and estimated consumer capacity. | Accepted |
 
 ## Statuses
 

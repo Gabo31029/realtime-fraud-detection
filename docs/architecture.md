@@ -112,6 +112,9 @@ un único nodo; en AWS, Amazon MSK con tres brokers en tres zonas de disponibili
 | `transactions.scored` | 6 | 7 días | Número de tarjeta | Score, decisión, razones y versión de modelo |
 | `transactions.dlq` | 1 | 30 días | — | Evento original y motivo del rechazo |
 
+- El número de particiones sale de la carga de diseño (500 eventos por segundo con margen de 2 veces) y de la
+  capacidad estimada de un consumidor (unos 200 eventos por segundo), pendiente de medir
+  ([ADR-0016](decisions/es/0016-particiones-topics.md)).
 - Los topics se crean de forma explícita; el broker no los crea automáticamente.
 - La retención del topic de entrada supera la ventana más larga (7 días) para poder reconstruir el estado de Redis.
   La retención se mide con el timestamp del mensaje, que es el momento de publicación, mientras que las ventanas se
